@@ -1,10 +1,6 @@
-## Установка зависимостей
-
-```sh
-(venv)...$ pip install fastapi "uvicorn[standard]" python-multipart
-```
-**standard** - помимо wsgi сервера будут установлены python-dotenv, watchdog 
+**uvicorn[standard]** - помимо wsgi сервера будут установлены python-dotenv, watchdog 
 (перезапускает сервер при изменениях в коде)
+
 **python-multipart** - для загрузки файлов
 
 ### Запуск сервера
