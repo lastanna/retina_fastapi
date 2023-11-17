@@ -23,8 +23,7 @@ def write_file(file: UploadFile, in_chunks):
         contents = file.file.read()
         res_folder = os.path.join(app_settings.res_path, file.filename)
         with open(res_folder, 'wb') as f:
-            with open(res_folder, 'wb') as f:
-                f.write(contents)
+            f.write(contents)
     except Exception as exc:
         return {"message": f"There was an error while uploading the file: {exc}"}
     finally:
